@@ -11,18 +11,6 @@
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "non-major dependencies"
-    },
-    {
-      "enabled": false,
-      "matchFileNames": ["mobile/**"],
-      "matchPackageNames": [
-        "/^@expo/",
-        "/^expo/",
-        "/^@react/",
-        "/^react/",
-        "/^@types/react/",
-        "/^typescript/"
-      ]
     }
   ]
 }

@@ -5,5 +5,5 @@ export default defineConfig({
   sortPackageJson: {
     sortScripts: true,
   },
-  ignorePatterns: ["server/worker-configuration.d.ts"],
+  ignorePatterns: ["worker-configuration.d.ts"],
 });
