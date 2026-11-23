@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "cf-typegen": "wrangler types",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate:local": "wrangler d1 migrations apply ticket-punch-local --local",
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
     "fmt": "oxfmt",
@@ -13,9 +15,14 @@
     "lint:fix": "oxlint --fix",
     "prepare": "husky"
   },
+  "dependencies": {
+    "drizzle-orm": "0.45.4",
+    "hono": "4.13.19"
+  },
   "devDependencies": {
     "@types/bun": "1.4.5",
     "@types/node": "26.6.6",
+    "drizzle-kit": "0.31.11",
     "husky": "9.1.7",
     "oxfmt": "0.79.0",
     "oxlint": "1.94.0",

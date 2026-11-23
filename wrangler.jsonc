@@ -1,10 +1,18 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "server",
+  "name": "ticket-punch-server",
   "main": "src/index.ts",
   "compatibility_date": "2026-11-18",
   "observability": {
     "enabled": true,
   },
   "upload_source_maps": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ticket-punch-local",
+      "database_id": "my-local-ticket-punch-db-id",
+      "migrations_dir": "./src/db/migrations",
+    },
+  ],
 }
